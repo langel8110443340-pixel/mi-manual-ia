@@ -3,9 +3,11 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.datasets import make_blobs
 
-# Configuración de la interfaz
-st.title("👨‍🔬 Laboratorio de K-Means")
-st.write("Ajusta los parámetros para ver cómo el algoritmo agrupa los datos.")
+import streamlit as st
+# ... resto de tus imports ...
+
+st.title("🤖 ML: Agrupamiento (K-Means)") # Cambia "Regresión" por "Agrupamiento"
+st.write("Ejemplo de Aprendizaje No Supervisado")
 
 # Barra lateral de controles
 k_value = st.sidebar.slider("Número de Clusters (K):", 2, 10, 3)
