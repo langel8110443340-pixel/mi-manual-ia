@@ -21,4 +21,5 @@ fig, ax = plt.subplots()
 ax.scatter(X[:, 0], X[:, 1], c=y_pred, cmap='viridis')
 ax.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], 
            s=250, c='red', marker='X', label='Centroides')
+ax.legend()
 st.pyplot(fig)
